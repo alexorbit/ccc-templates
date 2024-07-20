@@ -1,0 +1,278 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/Ftj5HsUA5Wg
+-->
+
+<div class="w-full bg-background text-foreground">
+  <header class="bg-primary text-primary-foreground py-4 px-6 md:px-8 lg:px-10">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a class="flex items-center gap-2" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-8 h-8"
+          >
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" x2="3" y1="12" y2="12"></line>
+          </svg>
+          <span class="text-lg font-semibold">Centro Cultural Cantareira</span>
+        </a>
+      </div>
+      <nav class="hidden md:flex items-center gap-4">
+        <a class="text-sm font-medium hover:text-primary-foreground/80" href="#">
+          Eventos
+        </a>
+        <a class="text-sm font-medium hover:text-primary-foreground/80" href="#">
+          Sobre
+        </a>
+        <a class="text-sm font-medium hover:text-primary-foreground/80" href="#">
+          Contato
+        </a>
+      </nav>
+      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="w-6 h-6"
+        >
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+    </div>
+  </header>
+  <main class="py-12 md:py-16 lg:py-20">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+        <div class="space-y-4">
+          <h1 class="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
+            Agende seu evento no Domo Geodésico
+          </h1>
+          <p class="text-muted-foreground md:text-lg">
+            O Domo Geodésico do Centro Cultural Cantareira é o local perfeito para seus eventos corporativos e
+            artísticos. Preencha o formulário abaixo para reservar seu horário.
+          </p>
+        </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <div class="p-6 space-y-6">
+            <form class="grid gap-4">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-2">
+                  <label
+                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    for="date"
+                  >
+                    Data
+                  </label>
+                  <input
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    type="date"
+                    id="date"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    for="time"
+                  >
+                    Horário
+                  </label>
+                  <input
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    type="time"
+                    id="time"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="event-type"
+                >
+                  Tipo de Evento
+                </label>
+                <div
+                  role="radiogroup"
+                  aria-required="false"
+                  dir="ltr"
+                  class="grid gap-2"
+                  id="event-type"
+                  tabindex="-1"
+                  style="outline:none"
+                >
+                  <div class="flex items-center gap-2">
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="true"
+                      data-state="checked"
+                      value="commercial"
+                      class="aspect-square h-4 w-4 rounded-full border border-primary text-primary ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      id="commercial"
+                      tabindex="-1"
+                      data-radix-collection-item=""
+                    >
+                      <span data-state="checked" class="flex items-center justify-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-circle h-2.5 w-2.5 fill-current text-current"
+                        >
+                          <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                      </span>
+                    </button>
+                    <input
+                      type="radio"
+                      aria-hidden="true"
+                      style="transform:translateX(-100%);position:absolute;pointer-events:none;opacity:0;margin:0"
+                      tabindex="-1"
+                      checked=""
+                      value="commercial"
+                    />
+                    <label
+                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      for="commercial"
+                    >
+                      Comercial (com cobrança)
+                    </label>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="false"
+                      data-state="unchecked"
+                      value="cultural"
+                      class="aspect-square h-4 w-4 rounded-full border border-primary text-primary ring-offset-background focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      id="cultural"
+                      tabindex="-1"
+                      data-radix-collection-item=""
+                    ></button>
+                    <input
+                      type="radio"
+                      aria-hidden="true"
+                      style="transform:translateX(-100%);position:absolute;pointer-events:none;opacity:0;margin:0"
+                      tabindex="-1"
+                      value="cultural"
+                    />
+                    <label
+                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      for="cultural"
+                    >
+                      Cultural (gratuito)
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="event-name"
+                >
+                  Nome do Evento
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  type="text"
+                  id="event-name"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="contact"
+                >
+                  Contato
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  type="text"
+                  id="contact"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="details"
+                >
+                  Detalhes Adicionais
+                </label>
+                <textarea
+                  class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  id="details"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                type="submit"
+              >
+                Agendar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-muted text-muted-foreground py-6 px-4 md:px-6 lg:px-8">
+    <div class="container mx-auto flex flex-col items-center justify-between gap-4 md:flex-row">
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="w-6 h-6"
+        >
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+          <polyline points="10 17 15 12 10 7"></polyline>
+          <line x1="15" x2="3" y1="12" y2="12"></line>
+        </svg>
+        <span class="text-sm font-medium">Centro Cultural Cantareira</span>
+      </div>
+      <nav class="flex items-center gap-4 text-sm font-medium">
+        <a class="hover:text-muted-foreground/80" href="#">
+          Eventos
+        </a>
+        <a class="hover:text-muted-foreground/80" href="#">
+          Sobre
+        </a>
+        <a class="hover:text-muted-foreground/80" href="#">
+          Contato
+        </a>
+      </nav>
+    </div>
+  </footer>
+</div>
